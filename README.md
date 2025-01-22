@@ -14,13 +14,13 @@ Key Focus Areas:
 Best-Selling Products 📈: 
 
 Identified the most profitable and top-selling products to streamline inventory management and product placement.
-Customer Spending Behavior 💸: 
+Customer Spending Behavior : 
 Analyzed how customers interact with the platform, including their purchasing patterns and average order values.
-Discount Effectiveness 🎯: 
+Discount Effectiveness : 
 Evaluated the impact of discount campaigns to optimize pricing strategies and promotional offers.
-Regional Sales Trends 🌍: 
+Regional Sales Trends : 
 Discovered sales trends across different regions, helping improve regional marketing and expansion strategies.
-Profitability & Margin Analysis 💡: 
+Profitability & Margin Analysis: 
 Assessed margins to provide a detailed view of the business’s most and least profitable products.
 
 Key Insights:
