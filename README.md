@@ -72,7 +72,12 @@ By analyzing discount effectiveness and profitability, the project helped refine
 Customer-Centric Decisions: 
 Allowed for more personalized marketing and retention strategies by analyzing customer spending behavior and lifetime value.
 
-This project demonstrates the power of SQL in transforming raw data into actionable insights that can drive business growth and efficiency. It’s a prime example of how SQL can be used to unlock the full potential of data in an e-commerce environment.
+This project demonstrates the power of SQL in transforming raw data into actionable insights that can drive business growth and efficiency. 
+It’s a prime example of how SQL can be used to unlock the full potential of data in an e-commerce environment.
+
+
+🔗 Check out the full project on my GitHub: 
+https://github.com/Khurramnaveed3233/Amazon-E-Commerce-SQL-Project/blob/main/AmazonEcommerce.sql
 
 
 
