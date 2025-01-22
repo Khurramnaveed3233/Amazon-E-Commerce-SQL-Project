@@ -1,7 +1,7 @@
 # 🚀 SQL Portfolio Project: Amazon E-Commerce Database Analysis 🛒📊
 
-![1737206394956](https://github.com/user-attachments/assets/b14b6c4a-5304-470c-93fb-989a9c732616)
 
+![Capture](https://github.com/user-attachments/assets/77cc1125-3217-4ea8-89c6-fc6d6691965a)
 
 I’m excited to share my latest SQL project where I developed and analyzed a comprehensive Amazon-like e-commerce database. This project tackled critical business challenges using SQL Server to deliver data-driven insights that can help optimize business operations, customer experience, and profitability.
 
