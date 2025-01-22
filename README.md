@@ -1,4 +1,4 @@
-# 🚀 SQL Portfolio Project: Amazon E-Commerce Database Analysis 🛒📊
+# 🚀 SQL Portfolio Project: Amazon E-Commerce Database Analysis
 
 
 ![Capture](https://github.com/user-attachments/assets/77cc1125-3217-4ea8-89c6-fc6d6691965a)
