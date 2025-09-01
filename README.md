@@ -1,4 +1,4 @@
-# 🚀 SQL Portfolio Project: Amazon E-Commerce Database Analysis
+# SQL Portfolio Project: Amazon E-Commerce Database Analysis
 
 ![Capture](https://github.com/user-attachments/assets/77cc1125-3217-4ea8-89c6-fc6d6691965a)
 
@@ -166,7 +166,7 @@ The attached slide deck defines **18 analytical lenses** across four pillars:
 ---
 
 ## 12. Appendix – SQL Starter Kit  
-```sql
+
 -- 1. Top-5 Best-Sellers by Quantity
 SELECT product_id,
        product_name,
@@ -176,6 +176,8 @@ GROUP  BY product_id, product_name
 ORDER  BY qty_sold DESC
 LIMIT 5;
 
+--- 
+
 -- 2. Top-5 Customers by Spend
 SELECT customer_id,
        SUM(total_amount) AS total_spend
@@ -183,6 +185,8 @@ FROM   orders
 GROUP  BY customer_id
 ORDER  BY total_spend DESC
 LIMIT 5;
+
+--- 
 
 -- 3. Profit per Product
 SELECT p.product_id,
