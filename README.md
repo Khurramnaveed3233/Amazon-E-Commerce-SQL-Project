@@ -165,33 +165,23 @@ The attached slide deck defines **18 analytical lenses** across four pillars:
 
 ---
 
-## 12. Appendix – SQL Starter Kit  
+## 13. Final Recommendations (TL;DR Checklist)
 
--- 1. Top-5 Best-Sellers by Quantity
-SELECT product_id,
-       product_name,
-       SUM(quantity) AS qty_sold
-FROM   order_items
-GROUP  BY product_id, product_name
-ORDER  BY qty_sold DESC
-LIMIT 5;
+| # | Recommendation | Owner | Impact (90 d) |
+|---|---|---|---|
+| 1 | **Cap hero-SKU discounts at 20 %** except Prime Day window | Category Mgmt | +2.3 pp margin |
+| 2 | **Liquidate 1 840 long-tail SKUs** via 30 % flash sale + email nurture | Supply-Chain | −$1.4 M inventory |
+| 3 | **Tiered consumer pricing**: Gold/Prime 25 %, Silver 30 % | CRM | +$1.1 M profit |
+| 4 | **Wishlist trigger campaign** (10 % coupon) for top 5 products | Growth | +3.7 % conversion |
+| 5 | **Geo-launch localized ads** in Canada & Nordics (budget $250 k) | Intl Marketing | +$2.2 M revenue |
+| 6 | **Bundle high-margin accessories** with Echo Dot & Fire TV | Product Ops | +$800 k profit |
+| 7 | **Review seed program**—give 1 000 free units to micro-influencers | Brand | +8 k new reviews |
+| 8 | **Early-warning dashboard**—auto-alert when GM% < 10 % | BI | Risk visibility |
 
---- 
+---
 
--- 2. Top-5 Customers by Spend
-SELECT customer_id,
-       SUM(total_amount) AS total_spend
-FROM   orders
-GROUP  BY customer_id
-ORDER  BY total_spend DESC
-LIMIT 5;
+## 14. Closing Note
 
---- 
+> “We’ve proven we can move volume; the next chapter is about moving **value**.  
+> Execute the checklist, track the KPIs, and we’ll meet again in 90 days with higher profit and healthier growth.”
 
--- 3. Profit per Product
-SELECT p.product_id,
-       p.product_name,
-       SUM((oi.price - oi.cost) * oi.quantity) AS total_profit
-FROM   order_items oi
-JOIN   products p ON p.product_id = oi.product_id
-GROUP  BY p.product_id, p.product_name;
