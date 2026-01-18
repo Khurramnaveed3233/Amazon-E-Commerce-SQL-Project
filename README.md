@@ -28,6 +28,8 @@ The key business challenges addressed in this project are:
 
 ##  Dataset & Database Design
 
+<img width="2816" height="1536" alt="(ER) Diagram – Amazon E-Commerce SQL Project" src="https://github.com/user-attachments/assets/909bd6b5-c508-465d-93cc-1aac96f77971" />
+
 The database represents a simplified Amazon-like system and includes:
 
 - Customers
