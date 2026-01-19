@@ -72,7 +72,8 @@ Discounts increase sales volume but negatively impact profit margins, while cert
 Products with higher ratings and wishlist activity show stronger demand and better sales performance.
 
 Power BI Dashboard Snapshot:  
-![Power BI Dashboard](images/amazon_powerbi_dashboard.png)
+
+<img width="2816" height="1536" alt="Amazon Power BI Dashboard" src="https://github.com/user-attachments/assets/3503b41d-66fb-4baf-8e3a-a404f8c36b4e" />
 
 ---
 
