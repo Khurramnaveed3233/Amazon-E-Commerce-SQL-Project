@@ -56,26 +56,6 @@ Entity Relationship Diagram (ERD):
 
 
 ---
-# 🛒 Amazon E-Commerce Data Analysis: Top 5 Strategic SQL Queries
-
-This section highlights the most impactful SQL queries used to solve critical business problems such as profit analysis, customer retention, and sales trends.
-
----
-
-### 1. Sales Impact Analysis: Before vs. After Discount
-**Business Problem:** How did the discount campaign starting on Dec 1st affect sales volume for lower-priced products?
-**Technique:** `CASE WHEN` statement for conditional aggregation.
-
-```sql
-SELECT 
-    p.ProductName,
-    SUM(CASE WHEN o.OrderDate < '2023-12-01' THEN od.Quantity * od.UnitPrice ELSE 0 END) AS SalesBeforeDiscount,
-    SUM(CASE WHEN o.OrderDate >= '2023-12-01' THEN od.Quantity * od.UnitPrice ELSE 0 END) AS SalesAfterDiscount
-FROM OrderDetails od
-JOIN Orders o ON od.OrderID = o.OrderID
-JOIN Products p ON od.ProductID = p.ProductID
-WHERE p.ProductID IN (SELECT ProductID FROM Products WHERE Price < 100)
-GROUP BY p.ProductName;
 
 ## Executive Summary
 
