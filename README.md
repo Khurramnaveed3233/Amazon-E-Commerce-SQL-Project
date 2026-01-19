@@ -30,12 +30,6 @@ Insights and recommendations are provided on the following key areas:
 - Customer Insights  
 - Regional Performance  
 
-The SQL queries used to inspect and clean the data for this analysis can be found here:  
-📄 `queries.sql`
-
-Targeted SQL queries answering key business questions can be found here:  
-📄 `queries.sql`
-
 The interactive Power BI dashboard used to report and explore sales trends can be found here:  
 
 <img width="2816" height="1536" alt="Amazon Power BI Dashboard" src="https://github.com/user-attachments/assets/3503b41d-66fb-4baf-8e3a-a404f8c36b4e" />
