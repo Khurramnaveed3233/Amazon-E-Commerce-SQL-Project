@@ -2,180 +2,181 @@
 
 <img width="960" height="540" alt="Amazon sql" src="https://github.com/user-attachments/assets/00377ef8-bc69-4225-a118-fe1691684ae6" />
 
-
-## Project Background
-
-This project simulates an **Amazon-style e-commerce business** operating in the online retail industry.  
-The company sells multiple product categories (e.g., Electronics, Home & Kitchen, Sports & Outdoors) across different regions and serves thousands of customers.
-
-From a data analyst’s perspective, the business wanted better visibility into:
-
-- Sales performance  
-- Customer value  
-- Product profitability  
-- Regional demand trends  
-
-The primary business metrics analyzed in this project include:
-- Total Revenue  
-- Total Profit  
-- Total Orders  
-- Customer Lifetime Value (CLV)  
-- Average Order Value (AOV)  
-- Product Profit Margins  
-
-Insights and recommendations are provided on the following key areas:
-
-- Sales Performance  
-- Product & Profitability  
-- Customer Insights  
-- Regional Performance  
-
 The interactive Power BI dashboard used to report and explore sales trends can be found here:  
 
 <img width="2816" height="1536" alt="Amazon Power BI Dashboard" src="https://github.com/user-attachments/assets/3503b41d-66fb-4baf-8e3a-a404f8c36b4e" />
 
+---
+
+## Business Context  
+
+### What This Dashboard Is About  
+This dashboard provides an **executive-level overview** of Amazon’s e-commerce performance. It tracks revenue, profit, orders, customers, order value, profit margin, sales trends, top products, product profitability, and regional performance.  
+
+It is designed to help leadership quickly understand **how the business is performing**, which products and regions are driving results, and where profitability can be improved.
+
+### What Business Problem It Solves  
+- No single view of overall sales and profit performance  
+- Difficulty identifying **high-margin vs high-volume products**  
+- Limited insight into **regional market performance**  
+- Challenges in tracking **month-over-month growth trends**  
+- Lack of clarity on which categories contribute most to profitability  
+
+This dashboard centralizes all key business metrics to support **faster, data-driven decisions**.
 
 ---
 
-## Data Structure & Initial Checks
+## KPIs Summary  
 
-The main database structure consists of the following tables:
+### Key KPIs Displayed  
 
-- **customers** – customer details (name, email, city, country, signup date)  
-- **products** – product information (name, category, price, cost)  
-- **orders** – order-level transactions (order date, total amount, discount applied)  
-- **order_details** – line-item order data (product, quantity, unit price)  
-- **reviews** – product ratings and reviews  
-- **wishlist** – customer wishlist behavior  
+- **Total Revenue:** $1.2M  
+  → Total income generated from sales  
 
-Each table is linked using primary and foreign keys to ensure referential integrity.
+- **Total Profit:** $250K  
+  → Net earnings after costs  
 
-Entity Relationship Diagram (ERD):  
+- **Total Orders:** 5.4K  
+  → Total number of transactions  
 
-<img width="2816" height="1536" alt="(ER) Diagram – Amazon E-Commerce SQL Project" src="https://github.com/user-attachments/assets/6974acd0-b185-4a50-8ac0-177800e185ff" />
+- **Total Customers:** 3.2K  
+  → Unique customers served  
 
+- **Average Order Value (AOV):** $220  
+  → Average revenue per order  
 
----
+- **Average Profit Margin:** 20.8%  
+  → Overall business profitability  
 
-## Executive Summary
+- **Month-over-Month Growth:**  
+  - Revenue: +12%  
+  - Profit: +12%  
+  - Orders: +12%  
+  - Customers: –5%  
+  - AOV: +15%  
+  - Profit Margin: –2.8%  
 
-### Overview of Findings
+### What These Numbers Indicate  
 
-This analysis reveals that a small number of products and customers generate a large share of total revenue and profit.  
-Discounts increase sales volume but negatively impact profit margins, while certain regions consistently outperform others.  
-Products with higher ratings and wishlist activity show stronger demand and better sales performance.
-
-Power BI Dashboard Snapshot:  
-
-<img width="2816" height="1536" alt="Amazon Power BI Dashboard" src="https://github.com/user-attachments/assets/3503b41d-66fb-4baf-8e3a-a404f8c36b4e" />
-
----
-
-## Insights Deep Dive
-
-### 1️⃣ Sales Performance
-
-**Insight 1:**  
-Monthly sales show an overall upward trend, with noticeable seasonality during peak months.
-
-**Insight 2:**  
-The top 5 products account for a significant percentage of total sales volume.
-
-**Insight 3:**  
-Discounted orders generate higher sales volume but lower profit margins.
-
-**Insight 4:**  
-Low-selling products still contribute meaningful profit due to higher margins.
+- The business is **growing strongly** in revenue, profit, and orders  
+- Customer count has slightly declined, but higher AOV is offsetting it  
+- Profit margin has dipped slightly, indicating **rising costs or discount pressure**  
+- Overall financial health is **positive but needs margin optimization**
 
 ---
 
-### 2️⃣ Product & Profitability
+## Visual-Wise Insights  
 
-**Insight 1:**  
-Electronics is the most profitable category overall.
+### A) Monthly Sales Trend (Last 12 Months)  
+**What it shows:**  
+Sales growth trend from January to December  
 
-**Insight 2:**  
-A few products generate disproportionately high profit margins.
+**Key Insight:**  
+Sales show a steady upward trend with a sharp dip in November and a strong rebound in December  
 
-**Insight 3:**  
-Some high-revenue products operate on thin margins.
-
-**Insight 4:**  
-Profitability varies significantly across categories.
+**Business Implication:**  
+There is clear seasonality. Inventory and marketing should be planned to **maximize peak months** and stabilize weaker periods.
 
 ---
 
-### 3️⃣ Customer Insights
+### B) Top 5 Best-Selling Products (by Quantity)  
+**What it shows:**  
+Highest-volume products sold  
 
-**Insight 1:**  
-A small group of high-value customers contributes a large share of total revenue.
+**Key Insight:**  
+Wireless Headphones lead sales, followed by 4K TVs and Smartphones  
 
-**Insight 2:**  
-Customer Lifetime Value (CLV) varies widely across segments.
-
-**Insight 3:**  
-Repeat customers show higher average order values.
-
-**Insight 4:**  
-Customers with wishlist activity tend to convert at higher rates.
+**Business Implication:**  
+These products are key revenue drivers and should be prioritized for **stock availability, promotions, and bundling**.
 
 ---
 
-### 4️⃣ Regional Performance
+### C) Product & Profitability Insights (Table)  
+**What it shows:**  
+Revenue, cost, profit, and margin by product  
 
-**Insight 1:**  
-North America is the dominant market in total sales.
+**Key Insight:**  
+Some products generate high revenue but lower margins, while others have strong margins but lower sales volume  
 
-**Insight 2:**  
-Certain regions show strong growth potential but low current penetration.
-
-**Insight 3:**  
-Regional sales vary significantly by product category.
-
-**Insight 4:**  
-Localized marketing could improve underperforming regions.
+**Business Implication:**  
+Product pricing and sourcing strategies need optimization to **improve overall profitability**.
 
 ---
 
-## Recommendations
+### D) Highest Profit Margin Products  
+**What it shows:**  
+Products ranked by profit margin  
 
-Based on the insights above, the business should consider:
+**Key Insight:**  
+4K Televisions and Gaming Consoles have the highest profit margins  
 
-- Focusing marketing and inventory investment on **top-selling and high-margin products**  
-- Launching loyalty programs for **high-value customers**  
-- Optimizing discount strategies to balance **volume growth and profitability**  
-- Increasing marketing spend in **high-growth regions**  
-- Reducing or repositioning consistently **low-performing products**  
-
----
-
-## Assumptions and Caveats
-
-- Missing regional records were excluded from regional performance analysis  
-- Incomplete review records were filtered out of rating calculations  
-- Profit calculations assume static product costs  
-- Discounts were treated as binary (applied vs not applied)  
-- Data quality checks were performed to remove duplicate and invalid records  
+**Business Implication:**  
+Marketing spend should be shifted toward **high-margin products** to maximize profit.
 
 ---
 
-## Tools & Technologies Used
+### E) Profit by Category (Donut Chart)  
+**What it shows:**  
+Profit contribution by category  
 
-- SQL (Joins, CTEs, Aggregations, Window Functions)  
-- Power BI (DAX, What-If Parameters, Interactive Dashboards)  
-- Relational Database Design  
-- Business-Focused Data Analysis  
+**Key Insight:**  
+Electronics dominates profitability, followed by Home & Kitchen  
 
----
-
-## Project Type
-
-**SQL + Power BI Portfolio Project | E-Commerce Analytics**
+**Business Implication:**  
+Category-level investments should focus on **Electronics** while improving margins in weaker categories.
 
 ---
 
-## Author
+### F) Regional Performance (Map)  
+**What it shows:**  
+Sales and margin performance by country  
 
-**Khurram Naveed**  
-Data Analyst | SQL • Power BI • Data Visualization  
-Instagram: https://www.instagram.com/khurram_insights/
+**Key Insight:**  
+The USA and Canada dominate total sales and profit  
+
+**Business Implication:**  
+North America is the strongest market and should receive **priority in expansion and marketing**.
+
+---
+
+### G) Regional Sales Comparison (Bar Chart)  
+**What it shows:**  
+Revenue comparison across countries  
+
+**Key Insight:**  
+The USA leads revenue, followed by Canada and Germany  
+
+**Business Implication:**  
+Emerging markets like India and Japan offer **growth opportunities** with targeted strategies.
+
+---
+
+## Top 5 Key Insights  
+
+- 📈 Revenue and profit both increased by **12% month-over-month**  
+- 💰 Electronics is the **most profitable category**  
+- 🏆 Wireless Headphones are the **top-selling product**  
+- 🌍 North America contributes **over 60% of total sales**  
+- ⚠ Profit margin declined by **2.8%**, indicating cost pressure  
+
+---
+
+## Business Recommendations  
+
+- Increase marketing investment in **high-margin products** (4K TVs, Gaming Consoles)  
+- Optimize pricing and supplier costs for **low-margin, high-volume products**  
+- Launch targeted campaigns in **India and Japan** for growth  
+- Improve customer retention to reverse the **decline in total customers**  
+- Bundle top products to increase **average order value**  
+- Plan inventory around **seasonal peaks** to avoid stockouts  
+
+---
+
+## Executive Summary  
+
+This dashboard shows that the business is performing strongly, with total revenue reaching $1.2M and profit standing at $250K. Sales, profit, and orders all grew by 12% compared to last month, indicating healthy business momentum. Electronics is the most profitable category, and Wireless Headphones are the top-selling product. Regionally, North America dominates total sales, with the USA and Canada leading revenue contribution.
+
+However, the profit margin has declined slightly, which suggests rising costs or pricing pressure. While average order value has increased, the total number of customers has dropped, indicating a need to focus on customer retention. To sustain long-term growth, the company should prioritize high-margin products, optimize low-margin segments, expand into emerging markets, and improve customer loyalty strategies.
+
+---
+
